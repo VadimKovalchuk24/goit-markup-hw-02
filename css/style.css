@@ -1,0 +1,34 @@
+/* Основной цвет #212121 */
+/* Вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+/* белый #ffffff */
+/* Футер ссылки rgba(255, 255, 255, 0.6); */
+/* фон #F5F5F5 #F5F4FA #2F303A*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+}
+
+/* Header */
+.logo{
+    color: #2196F3;
+}
+.logo-header{
+    color: #000000;
+}
+.list{
+    list-style: none;
+    
+}
+.site-nav{
+    color: #212121;
+}
+.site-nav :hover,
+.site-nav :focus{
+color: #2196F3;
+}
+.link-nav{
+    text-decoration: none;
+    color: #212121;
+}
