@@ -6,6 +6,11 @@
     --second-bg-color: #F5F5F5;
     --third-bg-color: #F5F4FA;
     --fourth-bg-color: #2F303A;
+    --five-bg-color: #188ce8;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --contact-footer-color: rgba(255, 255, 255, 0.6);
+
      }
 body{
     font-family: 'Roboto', sans-serif;
@@ -13,6 +18,7 @@ body{
     background-color: var(--primary-bg-color);
     font-size: 14px;
     letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 
@@ -28,7 +34,7 @@ body{
   
 }
 .logo-header{
-    color: #000000;
+    color: var(--black-color);
 }
 .list{
     list-style: none;
@@ -53,7 +59,7 @@ color: var(--accent-color);
 }
 
 .contact-head{
-    color: #757575;
+    color: var(--second-text-color);
     text-decoration: none;
     font-weight: 500;
   line-height: 1.14;
@@ -91,7 +97,7 @@ cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus{
-    background-color: #188ce8;
+    background-color: var(--five-bg-color);
 }
 /* Peculiarities */
 .visually-hiden{
@@ -149,33 +155,30 @@ letter-spacing: 0.03em;
 }
 .jobs{
     color: var(--second-text-color);
-    font-weight: 400;
 font-size: 16px;
-line-height: 19px;
+line-height: 1.19;
 text-align: center;
-letter-spacing: 0.03em;
 }
 /* Footer */
 .footer{
     background-color: var(--fourth-bg-color);
 }
 .logo-footer{
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 .footer-list{
     letter-spacing: 0.03em;
 }
 .location{
-    color: #FFFFFF;
+    color: var(--white-color);
     font-style: normal;
   line-height: 1.71;
   text-decoration: none;
   cursor: pointer;
 }
 .contact-footer{
-    color: rgba(255, 255, 255, 0.6);;
+    color: var(--contact-footer-color);
     font-style: normal;
-  line-height: 1.71;
   text-decoration: none;
 }
 .location:hover,
@@ -185,6 +188,15 @@ letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 /* Portfolio */
+.portfolio-hidden{
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 .btn{
     font-family: inherit;
   font-weight: 500;
@@ -199,8 +211,9 @@ letter-spacing: 0.03em;
 }
 .btn:hover,
 .btn:focus {
-  color: #FFFFFF;
+  color: var(--white-color);
   background-color: var(--accent-color) ;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-title{
     color: var(--primary-text-color);
@@ -210,8 +223,6 @@ letter-spacing: 0.03em;
 }
 .portfolio-work{
     color: var(--second-text-color);
-    font-weight: 400;
     font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
